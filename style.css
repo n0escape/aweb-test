@@ -1,0 +1,142 @@
+:root {
+    --perforation-list-margin: 12px;
+    --text-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.layout {
+    width: 100%;
+    padding: 40px;
+}
+
+.desctop{
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+h1 {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+h2 {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+h3 {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.perforation {
+    padding-top: 12px;
+}
+
+.perforation ol>li {
+    margin-left: var(--perforation-list-margin);
+}
+
+.perforation ol>li::marker,
+.perforation_title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.perforation_table {
+    width: 95%;
+    margin-left: calc(var(--perforation-list-margin) * -1);
+    border-collapse: collapse;
+}
+
+.perforation_table,
+.perforation_table td {
+    border: .5px solid var(--text-color);
+}
+
+.perforation_table_imgWrapper {
+    width: 100px;
+    text-align: center;
+    vertical-align: top;
+    padding: 8px;
+}
+
+.perforation_table tr:nth-child(2) .perforation_table_imgWrapper {
+    padding: 8px 4px 8px 16px;
+}
+
+.perforation_table_descr {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+
+    height: auto;
+    padding: 8px 12px 8px 32px;
+}
+
+.perforation_table_list li {
+    list-style-type: disc;
+}
+
+.perforation_table_link {
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.advantages h2 {
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+.advantages h3,
+.advantages p,
+.advantages li {
+    font-size: 14px;
+}
+
+.advantages h3 {
+    text-align: center;
+}
+
+.advantages_img {
+    float: left;
+    margin-bottom: 12px;
+    width: auto;
+    height: 144px;
+}
+
+.advantages_list {
+    padding-top: 32px;
+}
+
+.advantages_list ol>li {
+    margin-left: 32px;
+}
+.advantages_list ol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .layout {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .layout {
+        padding: 12px;
+    }
+}
